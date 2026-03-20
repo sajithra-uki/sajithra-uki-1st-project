@@ -1,0 +1,14 @@
+{
+  "name": "sajis-app",
+  "version": "1.0.0",
+  "description": "SAJIS Organic Sri Lankan Products",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "seed": "cd server && node seedAdmin.js",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
